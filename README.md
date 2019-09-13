@@ -2,8 +2,7 @@
 Uma implementação do Modelo de recuperacao da informacao vetorial, para a disciplina Recuperação da Informação do Instituto Federal Goaino, campus Rio Verde.
 
 
-# Forma de usar 
-
+## Forma de usar 
 
 A sintaxe da entrada : 
 
@@ -29,4 +28,42 @@ let termos = [
 
 ```
 
-O número de linhas de ```termos``` é igual o tamanho de ```nome_dos_termos````.
+O número de linhas de ```termos``` é igual o tamanho de ```nome_dos_termos```.
+
+## Exemplo de problema que o algoritmo é útil
+Para os vetores documentos abaixo, construa uma nova representação                                   |
+ vetorial através da fórmula do tf-idf. Utilizando o modelo espaço vetorial,                            |
+ encontre a lista de documentos resultantes para a consulta: Rio Olimpíada
+
+<table style="width:100%">
+  <tr>
+      <th>Documentos\Termos</th>
+    <th>Rio</th>
+    <th>Brasil</th>
+    <th>Olimpíada</th>
+  </tr>
+  <tr>
+      <td>d1</td>
+      <td>0</td> 
+      <td>0</td> 
+      <td>2</td>
+  </tr>
+  <tr>
+    
+<td>d2</td> <td>1</td> <td>0</td> <td>0</td>
+
+</tr>
+<tr>
+    <td>d3</td> <td>0</td> <td>1</td> <td>3</td>
+
+</tr>
+<tr>
+<td>d4</td> <td>2</td> <td>1</td> <td>0</td>
+
+</tr>
+<tr>
+<td>d5</td> <td>1</td> <td>2</td> <td>4</td>
+
+</tr>
+</table>
+ Rio Brasil Olimpíada
