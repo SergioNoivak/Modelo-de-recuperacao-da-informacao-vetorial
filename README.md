@@ -40,7 +40,7 @@ Para os vetores documentos abaixo, construa uma nova representação            
 
 <table style="width:100%">
   <tr>
-      <th>Documentos\Termos</th>
+      <th>Documentos</th>
     <th>Rio</th>
     <th>Brasil</th>
     <th>Olimpíada</th>
