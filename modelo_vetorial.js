@@ -1,5 +1,6 @@
 
 
+let nome_dos_termos =[ "Rio" ,"Brasil" ,"Olimpíada"]
 
 let termos = [
     
@@ -82,7 +83,6 @@ let frequencias_maximas = calcular_frequencias_maximas(termos);
 let TFs =calcularTFs(termos, frequencias_maximas)
 let IFDs = calcularIDFs(termos);
 
-let nome_dos_termos =[ "Rio" ,"Brasil" ,"Olimpíada"]
 let i=0;
 
 calcularpesos(TFs,IFDs).forEach(element => {
