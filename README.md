@@ -1,5 +1,8 @@
 # Modelo-de-recuperacao-da-informacao-vetorial
-Uma implementação do Modelo de recuperacao da informacao vetorial, para a disciplina Recuperação da Informação do Instituto Federal Goaino, campus Rio Verde.
+Uma implementação do Modelo de recuperacao da informacao vetorial, para a disciplina Recuperação da Informação do Instituto Federal Goaino, campus Rio Verde.<br>
+O Modelo Vetorial em Sistemas de Recuperação da Informação, proposto inicialmente por Salton, reconhece que o uso de pesos binários (como feito no modelo Booleano) é muito limitado e propõe um arcabouço onde o casamento parcial entre uma consulta e um documento da coleção é possível.
+
+Isso é feito através do assinalamento de pesos não binários aos termos de indexação dos documentos e consultas. Esses pesos associados aos termos são usados para calcular o grau de similaridade entre cada documento de uma coleção e a consulta de usuário. Dessa forma, o modelo vetorial leva em consideração documentos que casam com a consulta de forma parcial. Como resultado, o conjunto de respostas ordenadas é muito mais preciso do que o conjunto de respostas geradas pelo modelo booleano.
 
 
 ## Forma de usar 
@@ -66,4 +69,25 @@ Para os vetores documentos abaixo, construa uma nova representação            
 
 </tr>
 </table>
- Rio Brasil Olimpíada
+
+## Exemplo de saída
+
+A saída contém os pesos dos respectivos termos em cada um dos documentos: 
+
+```
+Termo:  Rio
+d 1 _ Rio  =  0
+d 2 _ Rio  =  0.09691001300805642
+d 3 _ Rio  =  0
+d 4 _ Rio  =  0.09691001300805642
+d 5 _ Rio  =  0.03230333766935214
+Termo:  Brasil
+d 1 _ Brasil  =  0
+d 2 _ Brasil  =  0
+d 5 _ Brasil  =  0.06460667533870428
+d 2 _ Olimpíada  =  0
+d 3 _ Olimpíada  =  -0.2041199826559248
+d 4 _ Olimpíada  =  0
+d 5 _ Olimpíada  =  -0.2041199826559248
+
+```
